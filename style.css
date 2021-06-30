@@ -13,6 +13,10 @@
     flex-wrap: wrap;
 }
 
+.menu-mobile{
+    display: none;
+}
+
 header{
     background-color: white;
     padding: 20px 0;
@@ -29,7 +33,7 @@ header{
 }
 
 .menu{
-    justify-content:right;
+    width: 85%;
     text-align:right;
 }
 
@@ -38,7 +42,8 @@ header{
     font-size: 14px;
     text-decoration: none;
     margin-right: 20px;
-}
+    /*transition:0.4s;*/
+}50
 
 .menu a:hover{
     color: #007bff;
@@ -72,6 +77,7 @@ section.main{
 
 .main_cta{
     width: 100%;
+    margin: 60px 0;
     text-align: center;
 }
 
@@ -120,10 +126,83 @@ section.sobre{
     padding: ;
 }
 
+.chamada-sobre h2{
+    color: #124265;
+    text-transform: uppercase;
+}
+
+.chamada-sobre p{
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px 0;
+}
+
+.conteudo-sobre{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudo-sobre p{
+    margin: 0 20px;
+    color: #444444;
+}
+
+.conteudo-sobre i{
+    color: #007bff;
+}
+
+.conteudo-sobre span{
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.section.conquistas{
+    background-color: #f8fbfe;
+    padding: 8px 0;
+}
+
+.conquista-single{
+    width: 22%;
+    margin-right: 3%;
+    text-align: center;
+    color: #124265;
+}
+
+.conquista-single h2{
+    font-size: 30px;
+}
+
 @media screen and (max-width: 768px){
     .diferencial-single{
         width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-mobile{
+        width: 100%;
+        text-align: right;
+        display: block;
+    }
+
+    .menu-mobile i{
+        cursor: pointer;
+        font-size: 23px;
+        margin-top: 8px;
+    }
+
+    .conteudo-sobre {
+        width: 100%; 
     }
     
+    .conteudo-sobre{
+        width: 100%;
+        margin-bottom: ;
+    }
 }
 
